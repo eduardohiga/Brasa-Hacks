@@ -1,7 +1,53 @@
-<ion-content [fullscreen]="True" class="NUcolor">
-  <ion-card style="height: 220px;">
-    <ion-card-content>
-      <canvas #doughnutCanvas></canvas>
-    </ion-card-content>
-  </ion-card>
-</ion-content>
+<ion-content class="NUcolor">
+
+  <ion-row style="height: 30px"></ion-row>
+
+    <ion-title size="large" color="light" class="ion-text-center">
+      <img src="assets\nubank-logo.jpg" style="height: 20px; width: 20px;" />
+      Lola
+    </ion-title>
+    
+  <ion-row style="height: 20px"></ion-row>
+
+  <ion-row style="height: 25px"></ion-row>
+
+  <div>
+    <ion-slides pager class="ion-slides">
+      <ion-slide>
+        <ion-card class="Dica" style="height: 400px; width: 350px;">
+          <ion-card-content class="ion-text-center">
+            <ion-title size="large;" style="color: black;" class="ion-text-center">  
+              Despesas mensais:
+            </ion-title>
+            <canvas #doughnutCanvas style="position: relative; margin: auto; height: 300px; width: 300px;"></canvas>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card class="Dica" style="height: 400px; width: 350px;">
+
+          <ion-card-content class="ion-text-center">
+            <ion-title size="large" style="color: black;" class="ion-text-center">  
+              Gastos mensais totais:
+            </ion-title>
+            <canvas #lineCanvas style="position: relative; margin: auto; height: 300px; width: 300px;"></canvas>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card class="Dica" style="height: 400px; width: 350px;">
+
+          <ion-card-content class="ion-text-center">
+            <ion-title size="large" style="color: black;" class="ion-text-center">  
+              Economias mensais totais:
+            </ion-title>
+            <canvas #economias style="position: relative; margin: auto; height: 300px; width: 300px;"></canvas>
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+    </ion-slides>
+
+  </div>

@@ -1,0 +1,78 @@
+<ion-toolbar color = "primary">
+  <ion-title class = "ion-text-center" color = "light">
+      Nu Lola
+  </ion-title>
+</ion-toolbar>
+
+
+<ion-content [fullscreen]="true" color = "primary">
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card color = "secondary">
+          <ion-card-content color = "secondary">
+
+            <ion-card-header>
+              <ion-card-title color="light"> Nova Receita</ion-card-title>
+            </ion-card-header>
+
+            <!-- <ion-item color = "secondary" lines = "inset" style="--highlight-height: 0;"> -->
+              <ion-label position="stacked" style="padding: 15px;" >Tipo de dado</ion-label>
+                  <ion-select placeholder="select one" okText="Continuar" cancelText="Voltar">
+                      <ion-select-option value="casa">Casa</ion-select-option>
+                      <ion-select-option value="educação">Educação</ion-select-option>
+                      <ion-select-option value="eletrônicos">Eletrônicos</ion-select-option>
+                      <ion-select-option value="lazer">Lazer</ion-select-option>
+                      <ion-select-option value="outros">Outros</ion-select-option>
+                      <ion-select-option value="restaurante">Restaurante</ion-select-option>
+                      <ion-select-option value="saúde">Saúde</ion-select-option>
+                      <ion-select-option value="serviços">Serviços</ion-select-option>
+                      <ion-select-option value="supermercado">Supermercado</ion-select-option>
+                      <ion-select-option value="transporte">Transporte</ion-select-option>
+                      <ion-select-option value="vestuário">Vestuário</ion-select-option>
+                      <ion-select-option value="viagem">Viagem</ion-select-option>
+                </ion-select>
+            <!-- </ion-item> -->
+
+            <ion-item color = "secondary" lines = "inset" style="--highlight-height: 0;">
+              <ion-label position="stacked">Data</ion-label>
+              <ion-input type="date" id="input-date" type="date"></ion-input>
+            </ion-item>
+
+            <ion-item color = "secondary" lines = "inset" style="--highlight-height: 0;">
+              <ion-label position="stacked">Valor</ion-label>
+              <ion-input type="text" id="input-value"></ion-input>
+            </ion-item>
+
+            <ion-item color = "secondary" lines = "inset" style="--highlight-height: 0;">
+              <ion-label position="stacked">Frequência</ion-label>
+              <ion-input type="text" id="input-frequency"></ion-input>
+            </ion-item>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-toolbar color="primary">
+    <div class="ion-text-center">
+      <ion-button class="ion-button" color="secondary" shape="round" (click)="stdbutton()">
+      <ion-icon slot="start" name="add-outline"></ion-icon>Adicionar Receita</ion-button>
+    </div>
+  </ion-toolbar>
+
+</ion-content>
+
+
+<ion-tabs>
+  <ion-tab-bar slot="bottom" color = "secondary">
+    <ion-tab-button tab="tab1">
+      <ion-label text-wrap= "break text">Continuar mais tarde</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="tab2">
+      <ion-label text-wrap= "break text">Passar para despesas</ion-label>
+    </ion-tab-button>
+
+  </ion-tab-bar>
+</ion-tabs>
