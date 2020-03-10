@@ -1,17 +1,76 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
+<ion-content [fullscreen]="True">
+  <ion-toolbar class="NUcolor">
+
+    <ion-row style="height: 30px"></ion-row>
+
+    <ion-title size="large" color="light" class="ion-text-center">
+      <img src="assets\nubank-logo.jpg" style="height: 20px; width: 20px;" />
+      Lola
     </ion-title>
+    
+    <ion-row style="height: 20px"></ion-row>
+
+
+    <ion-title size="small" color="light" class="ion-text-center">  
+      Artigos novinhos em folha
+    </ion-title>
+
+
+    <ion-row style="height: 10px"></ion-row>
+
+    <div>
+      <ion-slides pager class="ion-slides">
+        
+        <ion-slide>
+          <ion-card class="Dica" style="height: 290px; width: 300px;">
+
+            <ion-card-content class="ion-text-center">
+              “É essencial mostrar a participação das mulheres nas empresas”
+              <ion-row style="height: 0px"></ion-row>
+              <div class="spacer" style="width: 300px; height: 11px;"></div>
+              <img src="assets\imagemmulheres.jpeg" style="height: 93px; width: 160px;" />
+              <ion-row style="height: 20px"></ion-row>
+              <a href="https://blog.nubank.com.br/priscila-souza-reinventa-o-possivel/" style="color:#6D1C78;">Leia e ganhe pontos :)</a>
+            </ion-card-content>
+          </ion-card>
+        </ion-slide>
+
+
+        <ion-slide>
+          <ion-card class="Dica" style="height: 290px; width: 300px;">
+
+            <ion-card-content class="ion-text-center">
+              “Circuit breaker: o que é, como funciona e quando acontece?”
+              <ion-row style="height: 0px"></ion-row>
+              <div class="spacer" style="width: 300px; height: 11px;"></div>
+              <img src="assets\circuit-header.jpg" style="height: 93px; width: 160px;" />
+              <ion-row style="height: 20px"></ion-row>
+              <a href="https://blog.nubank.com.br/circuit-breaker-o-que-e/" style="color:#6D1C78;">Leia e ganhe pontos :)</a>
+            </ion-card-content>
+          </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-card class="Dica" style="height: 290px; width: 300px;">
+
+            <ion-card-content class="ion-text-center">
+              “Meus colegas me acham forte – e tenho orgulho disso”
+              <ion-row style="height: 0px"></ion-row>
+              <div class="spacer" style="width: 300px; height: 11px;"></div>
+              <img src="assets\imagemmulherforte.jpg" style="height: 93px; width: 160px;" />
+              <ion-row style="height: 20px"></ion-row>
+              <a href="https://blog.nubank.com.br/michelle-onuki-reiventa-o-possivel/" style="color:#6D1C78;">Leia e ganhe pontos :)</a>
+            </ion-card-content>
+          </ion-card>
+        </ion-slide>
+
+        
+
+      </ion-slides>
+
+    </div>
+
+    <ion-row style="height: 0px"></ion-row>
+    
   </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
 </ion-content>
