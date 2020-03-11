@@ -11,7 +11,7 @@
     <ion-row style="height: 20px"></ion-row>
 
 
-    <ion-title size="small" color="light" class="ion-text-center">  
+    <ion-title size="small" color="light" class="ion-text-center" style=" font-weight: bold;">  
       Dica do dia:
     </ion-title>
     <ion-card class="Dica">
@@ -25,12 +25,16 @@
     <ion-row style="height: 10px"></ion-row>
 
     <div>
-      <ion-slides pager class="ion-slides">
+      <ion-slides pager class="ion-slides" [options]="slideOpts">
         <ion-slide>
-          <ion-card class="Dica" style="height: 290px; width: 300px;">
+          <ion-card class="Dica" style="height: 290px; width: 300px; background-color: white;">
 
-            <ion-card-content class="ion-text-center">
-              Seja bem-vinda, Lola!
+            <ion-card-content  style="color: black; font-size: large;" class="ion-text-center">
+              <ion-row style="height: 10px"></ion-row>
+              <ion-title  size="small" style="color: black;" class="ion-text-center">  
+                Relação consumo e meta:
+              </ion-title>
+              <canvas #metas style="position: relative; margin: auto; height: 200px; width: 270px;"></canvas>
 
 
               
@@ -39,48 +43,71 @@
         </ion-slide>
 
         <ion-slide>
-          <ion-card class="Dica" style="height: 290px; width: 300px;">
+          <ion-card class="Dica" style="height: 290px; width: 300px;  background-color: white;">
 
-            <ion-card-content class="ion-text-center">
-              Confira as estatísticas, Lola!
-              <ion-row style="height: 0px"></ion-row>
-              Gráficos
-              <ion-row style="height: 0px"></ion-row>
-              Que
-              <ion-row style="height: 0px"></ion-row>
-              Mostram
-              <ion-row style="height: 0px"></ion-row>
-              Seu
-              <ion-row style="height: 0px"></ion-row>
-              Consumo
-              <ion-row style="height: 0px"></ion-row>
-              :D
-              <ion-row style="height: 20px"></ion-row>
-              <ion-row style="height: 20px"></ion-row>
-              Metas de economia da semana (25%):
-              <ion-progress-bar value="0.25" style="height: 15px; bottom: 0px;" color="warning"></ion-progress-bar>
+            <ion-card-content  style="color: black;">
+              <div style="color: black; font-size: large;" class="ion-text-center">
+                Limites à serem atingidos:
+              </div>
+              <ion-row style="height: 5"></ion-row>
+              <div style="color: black;" class="ion-text-left">
+                Vestuário do mês:
+              </div>
+              <progress-bar [progress]="91" [color-degraded]="{'0': 'green',  '50': 'orange', '75': 'red'}">
+              </progress-bar>
+              <ion-row style="height: 5px"></ion-row>
+              <div style="color: black;" class="ion-text-left">
+                Mercado do mês:
+              </div>
+              <progress-bar [progress]="80" [color-degraded]="{'0': 'green',  '50': 'orange', '75': 'red'}">
+              </progress-bar>
+              <ion-row style="height: 5"></ion-row>
+              <div style="color: black;" class="ion-text-left">
+                Restaurante do mês:
+              </div>
+              <progress-bar [progress]="74" [color-degraded]="{'0': 'green',  '50': 'orange', '75': 'red'}">
+              </progress-bar>
             </ion-card-content>
           </ion-card>
         </ion-slide>
 
 
-        <ion-slide>
-          <ion-card class="Dica" style="height: 290px; width: 300px;">
+        <ion-slide class="ion-slide">
+          <ion-card style="height: 290px; width: 300px;" [scrollEvents]="true">
 
             <ion-card-content class="ion-text-center">
-              Rewards!
-              <ion-row style="height: 0px"></ion-row>
-              Vamos
-              <ion-row style="height: 0px"></ion-row>
-              Gamificar
-              <ion-row style="height: 0px"></ion-row>
-              e
-              <ion-row style="height: 0px"></ion-row>
-              ganhar
-              <ion-row style="height: 0px"></ion-row>
-              vqv
-              <ion-row style="height: 0px"></ion-row>
-              time
+              <ion-list [scrollEvents]="true">
+                <ion-item>
+                  <ion-label>Pokémon Yellow</ion-label>
+                </ion-item>
+                <ion-item>
+                  <ion-label>Mega Man X</ion-label>
+                </ion-item>
+                <ion-item>
+                  <ion-label>The Legend of Zelda</ion-label>
+                </ion-item>
+                <ion-item>
+                  <ion-label>Pac-Man</ion-label>
+                </ion-item>
+                <ion-item>
+                  <ion-label>Super Mario World</ion-label>
+                </ion-item>
+                <ion-item>
+                  <ion-label>Pokémon Yellow</ion-label>
+                </ion-item>
+                <ion-item>
+                  <ion-label>Mega Man X</ion-label>
+                </ion-item>
+                <ion-item>
+                  <ion-label>The Legend of Zelda</ion-label>
+                </ion-item>
+                <ion-item>
+                  <ion-label>Pac-Man</ion-label>
+                </ion-item>
+                <ion-item>
+                  <ion-label>Super Mario World</ion-label>
+                </ion-item>
+              </ion-list>
               <ion-row style="height: 20px"></ion-row>
               <ion-row style="height: 20px"></ion-row>
             </ion-card-content>
@@ -118,13 +145,13 @@
 
 
     <div class="ion-text-center">
-      <ion-button class="ion-button" shape="round">
+      <ion-button class="ion-button" shape="round" (click)="go_to('./tabs/receita')">
         Adicionar Receita
       </ion-button>
     </div>
 
     <div class="ion-text-center">
-      <ion-button class="ion-button" shape="round">
+      <ion-button class="ion-button" shape="round" (click)="go_to('./tabs/despesa')">
         Adicionar Despesa
       </ion-button>
     </div>

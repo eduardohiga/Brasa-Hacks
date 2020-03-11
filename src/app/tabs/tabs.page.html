@@ -6,34 +6,40 @@
           <ion-col>
 
             <ion-segment scrollable value="tab">
-              <ion-segment-button value="Ajustes" class="Dica" (click)="go_to('./tabs/ajustes')">
-                <ion-icon name="settings-outline" color="white"></ion-icon>
-                <ion-label text-wrap style="font-size: 10px;">Ajustes</ion-label>
-              </ion-segment-button>
 
               <ion-segment-button value="Home" class="Dica" (click)="go_to('./tabs/home')">
                 <ion-icon name="home-outline" color="white"></ion-icon>
                 <ion-label text-wrap style="font-size: 10px;">Página principal</ion-label>
               </ion-segment-button>
 
-              <ion-segment-button value="Opa" class="Dica" (click)="go_to('./tabs/tab1')">
+              <ion-segment-button value="Dados" class="Dica" (click)="go_to('./tabs/tab1')">
                 <ion-icon name="bar-chart-outline" color="white"></ion-icon>
                 <ion-label text-wrap style="font-size: 10px;">Estatísticas</ion-label>
               </ion-segment-button>
 
-              <ion-segment-button value="isso" class="Dica" (click)="go_to('./tabs/tab2')">
+              <ion-segment-button value="Metas" class="Dica" (click)="go_to('./tabs/metas')">
+                <ion-icon name="rocket-outline" color="white"></ion-icon>
+                <ion-label text-wrap style="font-size: 10px;">Minhas metas</ion-label>
+              </ion-segment-button>
+
+              <ion-segment-button value="EF" class="Dica" (click)="go_to('./tabs/tab2')">
                 <ion-icon name="book-outline" color="white"></ion-icon>
                 <ion-label text-wrap style="font-size: 10px;">Educação Financeira</ion-label>
               </ion-segment-button>
                         
-              <ion-segment-button value="sim" class="Dica" (click)="go_to('./tabs/tab3')">
+              <ion-segment-button value="Rewards" class="Dica" (click)="go_to('./tabs/tab3')">
                 <ion-icon name="star-half-outline" color="white"></ion-icon>
                 <ion-label text-wrap style="font-size: 10px;">Rewards</ion-label>
               </ion-segment-button>
                         
-              <ion-segment-button value="nao" class="Dica">
+              <ion-segment-button value="FalaNu" class="Dica">
                 <ion-icon name="school-outline" color="white"></ion-icon>
-                <ion-label text-wrap style="font-size: 10px;">FalaNu</ion-label>
+                <ion-label text-wrap style="font-size: 10px; ">FalaNu</ion-label>
+              </ion-segment-button>
+              
+              <ion-segment-button value="Ajustes" class="Dica" (click)="go_to('./tabs/ajustes')">
+                <ion-icon name="settings-outline" color="white"></ion-icon>
+                <ion-label text-wrap style="font-size: 10px;">Ajustes</ion-label>
               </ion-segment-button>
 
           </ion-segment>

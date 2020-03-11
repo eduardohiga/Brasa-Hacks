@@ -1,0 +1,207 @@
+<ion-content [fullscreen]="True">
+  <ion-toolbar class="NUcolor">
+
+    <ion-row style="height: 30px"></ion-row>
+
+    <ion-title size="large" color="light" class="ion-text-center">
+      <img src="assets\nubank-logo.jpg" style="height: 20px; width: 20px;" />
+      Lola
+    </ion-title>
+    
+    <ion-row style="height: 20px"></ion-row>
+
+    <ion-title size="large" color="light" class="ion-text-center">
+      Progresso de metas
+    </ion-title>
+
+    <ion-row style="height: 20px"></ion-row>
+    <ion-card (click)="expandItem(item)">
+      <ion-card-header>
+        <ion-card-title size="small" class="ion-text-center">
+          <ion-icon name="logo-bitcoin"></ion-icon>
+          Economias
+        </ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <app-expandable expandHeight="150px" [expanded]="item.expanded">
+          <p class="ion-text-center">
+            
+            Nesse mês você economizou R$230,00 e a meta é de R$300,00
+            
+            <progress-bar [progress]="76.67" [color-degraded]="{'0': 'red',  '25': 'orange','50': '#90ee90', '75': 'green'}">
+            </progress-bar>
+
+            Cumpra essa meta e ganhe 10 NUPontos!
+          </p>
+        </app-expandable>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card (click)="expandItem(item1)">
+      <ion-card-header>
+        <ion-card-title class="ion-text-center">
+          <ion-icon name="shirt-outline"></ion-icon>
+          Vestuário
+        </ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <app-expandable expandHeight="150px" [expanded]="item1.expanded">
+          <p>
+            Você gastou R$350,00 de sua meta mensal de R$100,00
+            
+            <progress-bar [progress]="100" [color-degraded]="{'0': 'green', '25': '#90ee90', '50': 'orange', '75': 'red'}">
+            </progress-bar>
+
+            Acesse nossa aba de educação financeira para melhor controlar suas finanças e atingir suas próximas metas!
+          </p>
+        </app-expandable>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card (click)="expandItem(item2)">
+      <ion-card-header>
+        <ion-card-title class="ion-text-center">
+          
+          <ion-icon name="desktop-outline"></ion-icon>
+          Eletrônicos
+
+        </ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <app-expandable expandHeight="150px" [expanded]="item2.expanded">
+          <p>
+            Você gastou R$559,00 de sua meta mensal de R$500,00
+            
+            <progress-bar [progress]="100" [color-degraded]="{'0': 'green', '25': '#90ee90', '50': 'orange', '75': 'red'}">
+            </progress-bar>
+
+            Acesse nossa aba de educação financeira para melhor controlar suas finanças e atingir suas próximas metas!
+          </p>
+        </app-expandable>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card (click)="expandItem(item3)">
+      <ion-card-header>
+        <ion-card-title class="ion-text-center">
+          <ion-icon name="cart-outline"></ion-icon>
+
+          Supermercado
+        </ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <app-expandable expandHeight="150px" [expanded]="item3.expanded">
+          <p class="ion-text-center">
+            Você gastou R$400,00 de sua meta mensal de R$500,00
+            
+            <progress-bar [progress]="80" [color-degraded]="{'0': 'green', '25': '#90ee90', '50': 'orange', '75': 'red'}">
+            </progress-bar>
+            Cumpra essa meta e ganhe 5 NUPontos!
+          </p>
+        </app-expandable>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card (click)="expandItem(item4)">
+      <ion-card-header>
+        <ion-card-title class="ion-text-center">
+          <ion-icon name="football-outline"></ion-icon>
+          Lazer
+        </ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <app-expandable expandHeight="150px" [expanded]="item4.expanded">
+          <p class="ion-text-center">
+            Você gastou R$300,00 de sua meta mensal de R$400,00
+            
+            <progress-bar [progress]="75" [color-degraded]="{'0': 'green', '25': '#90ee90', '50': 'orange', '75': 'red'}">
+            </progress-bar>
+            Cumpra essa meta e ganhe 5 NUPontos!
+          </p>
+        </app-expandable>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card (click)="expandItem(item5)">
+      <ion-card-header>
+        <ion-card-title class="ion-text-center">
+          <ion-icon name="restaurant-outline"></ion-icon>
+  
+          Restaurante
+        </ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <app-expandable expandHeight="150px" [expanded]="item5.expanded">
+          <p class="ion-text-center">
+            Você gastou R$221,00 de sua meta mensal de R$300,00
+            
+            <progress-bar [progress]="73.67" [color-degraded]="{'0': 'green', '25': '#90ee90', '50': 'orange', '75': 'red'}">
+            </progress-bar>
+            Cumpra essa meta e ganhe 5 NUPontos!
+          </p>
+        </app-expandable>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card (click)="expandItem(item6)">
+      <ion-card-header>
+        <ion-card-title class="ion-text-center">
+          <ion-icon name="train-outline"></ion-icon>  
+          Transporte
+        </ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <app-expandable expandHeight="150px" [expanded]="item6.expanded">
+          <p class="ion-text-center">
+            Você gastou R$100,00 de sua meta mensal de R$300,00
+            
+            <progress-bar [progress]="33.33" [color-degraded]="{'0': 'green', '25': '#90ee90', '50': 'orange', '75': 'red'}">
+            </progress-bar>
+            Cumpra essa meta e ganhe 5 NUPontos!
+          </p>
+        </app-expandable>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-card (click)="expandItem(item7)">
+      <ion-card-header>
+        <ion-card-title class="ion-text-center">
+          <ion-icon name="beer-outline"></ion-icon>
+          Bebidas
+        </ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>
+        <app-expandable expandHeight="150px" [expanded]="item7.expanded">
+          <p class="ion-text-center">
+            Você gastou R$30,00 de sua meta mensal de R$300,00
+            
+            <progress-bar [progress]="10" [color-degraded]="{'0': 'green', '25': '#90ee90', '50': 'orange', '75': 'red'}">
+            </progress-bar>
+            Cumpra essa meta e ganhe 5 NUPontos!
+          </p>
+        </app-expandable>
+      </ion-card-content>
+    </ion-card>
+
+    <ion-row style="height: 20px"></ion-row>
+
+    <div class="ion-text-center">
+      <ion-button class="Textbutton" shape="round" (click)="go_to('./tabs/addmeta')">
+        Adicionar Despesa
+      </ion-button>
+    </div>
+
+    <ion-row style="height: 30px"></ion-row>
+
+
+  </ion-toolbar>
+
+</ion-content>

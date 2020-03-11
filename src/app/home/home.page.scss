@@ -23,11 +23,6 @@ ion-button {
 }
 
 .Dica {
-  --brackground: white;
-  --color: black;
-}
-
-.Dicaa {
   --background: #90269e;
   --color: white;
 }
@@ -43,4 +38,23 @@ ion-button {
 ion-slides {
   --bullet-background: #481150;
   --bullet-background-active: #6d1c78;
+  height: auto;
+  //height:100%;
+  //overflow-y: auto;
+  overflow-y: hidden;
+  display: block;
+  //height: initial;
+  
+}
+
+ion-slide{
+  height: auto;
+  ion-list{
+    
+    overflow-y: hidden;
+  }
+  .slide-zoom {
+    height: calc(100vh - 143px);
+    overflow-y: hidden;
+}
 }

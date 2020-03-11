@@ -18,6 +18,56 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'addmeta',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../addmeta/addmeta.module').then(m => m.AddmetaPageModule)
+          }
+        ]
+      },
+      {
+        path: 'firstaccess',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../firstaccess/firstaccess.module').then(m => m.FirstaccessPageModule)
+          }
+        ]
+      },
+      {
+        path: 'metas',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../metas/metas.module').then(m => m.MetasPageModule)
+          }
+        ]
+      },
+      {
+        path: 'receita',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../receita/receita.module').then(m => m.ReceitaPageModule)
+          }
+        ]
+      },
+      {
+        path: 'despesa',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../despesa/despesa.module').then(m => m.DespesaPageModule)
+          }
+        ]
+      },
+      {
         path: 'ajustes',
         children: [
           {
