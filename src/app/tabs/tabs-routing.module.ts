@@ -18,6 +18,36 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'firstaccess',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../firstaccess/firstaccess.module').then(m => m.FirstaccessPageModule)
+          }
+        ]
+      },
+      {
+        path: 'receita',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../receita/receita.module').then(m => m.ReceitaPageModule)
+          }
+        ]
+      },
+      {
+        path: 'despesa',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../despesa/despesa.module').then(m => m.DespesaPageModule)
+          }
+        ]
+      },
+      {
         path: 'ajustes',
         children: [
           {
