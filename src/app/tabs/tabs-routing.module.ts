@@ -18,12 +18,32 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'addmeta',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../addmeta/addmeta.module').then(m => m.AddmetaPageModule)
+          }
+        ]
+      },
+      {
         path: 'firstaccess',
         children: [
           {
             path: '',
             loadChildren: () =>
               import('../firstaccess/firstaccess.module').then(m => m.FirstaccessPageModule)
+          }
+        ]
+      },
+      {
+        path: 'metas',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../metas/metas.module').then(m => m.MetasPageModule)
           }
         ]
       },
@@ -48,12 +68,32 @@ const routes: Routes = [
         ]
       },
       {
+        path: 'register',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../register/register.module').then(m => m.RegisterPageModule)
+          }
+        ]
+      },
+      {
         path: 'ajustes',
         children: [
           {
             path: '',
             loadChildren: () =>
               import('../ajustes/ajustes.module').then(m => m.AjustesPageModule)
+          }
+        ]
+      },
+      {
+        path: 'ef',
+        children: [
+          {
+            path: '',
+            loadChildren: () =>
+              import('../ef/ef.module').then(m => m.EfPageModule)
           }
         ]
       },
@@ -91,14 +131,14 @@ const routes: Routes = [
         path: '',
         redirectTo: '/tabs/home',
         pathMatch: 'full'
-      }
+      },
     ]
   },
   {
     path: '',
-    redirectTo: '/tabs/home',
-    pathMatch: 'full'
-  }
+    redirectTo: 'tabs/home',
+    pathMatch: 'full',
+  },
 ];
 
 @NgModule({
