@@ -1,0 +1,76 @@
+<ion-content [fullscreen]="True">
+  <ion-toolbar class="NUcolor">
+
+    <ion-row style="height: 30px"></ion-row>
+
+    <ion-title size="large" color="light" class="ion-text-center">
+      <img src="assets\nubank-logo.jpg" style="height: 20px; width: 20px;" />
+      Lola
+    </ion-title>
+    
+    <ion-row style="height: 20px"></ion-row>
+
+    <ion-title size="large" color="light" class="ion-text-center">
+      Introdução
+    </ion-title>
+    <ion-row style="height: 20px"></ion-row>
+    <div class="text-nowrap"	style="font-size: medium; color: white; margin: 16px;">
+      <ion-text>
+        Ao fim do módulo você poderá optar por realizar um teste de validação. Porém recomendamos que você faça esse teste,
+        pois além de validar seus conhecimentos você ganhará pontos!
+      </ion-text>
+    </div>
+    <div class="ion-text-center">
+      <img src="assets\rewards.png" style="height: 130px; width: 200px;" />
+    </div>
+    <div class="text-nowrap"	style="font-size: medium; color: white; margin: 16px;">
+      <ion-text>
+        Ao fim de cada módulo você também será recompensado com pontos. Dessa forma incentivamos que você continue estudando!
+      </ion-text>
+    </div>
+
+    <ion-row style="height: 10px"></ion-row>
+
+    <div class="text-nowrap"	style="font-size: medium; color: white; margin: 16px;">
+      <ion-text>
+        Esperamos que você goste do curso e que seja de bom proveito :)
+      </ion-text>
+    </div>
+    
+  </ion-toolbar>
+
+</ion-content>
+
+<ion-tabs scrollable>
+  <ion-tab-bar slot="bottom" class="Dica">
+    <ion-grid fixed>
+
+        <ion-row>
+          <ion-col>
+
+            <ion-segment scrollable value="tab">
+
+              <ion-segment-button value="Ef" class="Dica" (click)="go_to('tabs/ef')">
+                <ion-icon name="book-outline" color="white"></ion-icon>
+                <ion-label text-wrap style="font-size: 10px;">Sair</ion-label>
+              </ion-segment-button>
+
+              <ion-segment-button value="Continuaranterior" class="Dica" (click)="go_to('continuar')">
+                <ion-icon name="arrow-back-outline" color="white"></ion-icon>
+                <ion-label text-wrap style="font-size: 10px;">Voltar</ion-label>
+              </ion-segment-button>
+
+              <ion-segment-button value="Fim" class="Dica" (click)="go_to('tabs/ef')">
+                <ion-icon name="arrow-forward-outline" color="white"></ion-icon>
+                <ion-label text-wrap style="font-size: 10px;">Finalizar</ion-label>
+              </ion-segment-button>
+
+          </ion-segment>
+
+
+          </ion-col>
+        </ion-row>
+    </ion-grid>
+  </ion-tab-bar>
+
+</ion-tabs>

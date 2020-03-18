@@ -1,0 +1,62 @@
+ion-content ion-toolbar {
+    //--background: translucent;
+    --background: #6d1c78;
+  }
+  
+  ion-content {
+    --background: #6d1c78;
+  }
+  
+  ion-button {
+    --header-color: #90269e;
+    --background: #90269e;
+    --color: white;
+  }
+  
+  .NUcolor {
+    --background: #6d1c78;
+  }
+  
+  .Logo_user {
+    --color: white;
+  }
+  
+  .Dica {
+    --background: #90269e;
+    --color: white;
+  }
+  
+  .Textbutton {
+    --background: #90269e;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    --color: white;
+    size: small;
+  }
+  
+  ion-slides {
+    --bullet-background: #481150;
+    --bullet-background-active: #6d1c78;
+    //height: auto;
+    //height:100%;
+    //overflow-y: auto;
+    overflow-y: scroll;
+    //display: block;
+    //height: initial;
+    
+  }
+  
+  .teste {
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+  
+  ion-list {
+    overflow: hidden;
+    overflow-y: auto;
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
