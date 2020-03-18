@@ -1,0 +1,36 @@
+<ion-content class="view-class" title="login" id="page1">
+  <ion-row style="height: 30px"></ion-row>
+  <ion-content padding="true" class="has-header">
+    <img src="assets\nubank-logo.jpg" style="height: 100px; width: 100px;margin-left: 150px" />
+
+    <ion-row style="height: 60px"></ion-row>
+
+    <form id="login-form1" class="list">
+      <label class="item item-input" id="login-input2">
+        <span style="color:#FFFFFF; margin-left: 20px" class="input-label">E-mail</span>
+        <input type="email" style="margin-left: 40px" placeholder="" name="userid">
+      </label>
+      <div class="spacer" style="width: 300px; height: 11px;"></div>
+      <label class="item item-input" id="login-input3">
+        <span style="color:#FFFFFF; margin-left: 20px" class="input-label">Senha</span>
+        <input type="password" style="margin-left: 40px" placeholder="" name="psswd">
+      </label>
+      <br>
+      <br>
+    </form>
+    <ion-row style="height: 20px"></ion-row>
+    <div class="ion-text-center">
+    <ion-button  (click)="go_to('tabs')" class="ion-button" shape="round">Login</ion-button>
+    </div>
+    <br>
+    <br>
+    <div class="Logo_user ion-text-center" style="color: white;">
+      Não possui uma conta?
+    </div>
+    <div class="ion-text-center">
+      <ion-button class="ion-button" shape="round">Registrar</ion-button>
+    </div>
+  </ion-content>
+
+</ion-content>
+

@@ -1,0 +1,71 @@
+<ion-content [fullscreen]="True" class="NUcolor">
+  <ion-toolbar class="NUcolor">
+
+    <ion-row style="height: 30px"></ion-row>
+
+    <ion-title size="large" color="light" class="ion-text-center">
+      <img src="assets\nubank-logo.jpg" style="height: 20px; width: 20px;" />
+      Lola
+    </ion-title>
+    
+    <ion-row style="height: 20px"></ion-row>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card color = "secondary">
+            <ion-card-content color = "secondary">
+
+              <ion-card-header>
+                <ion-card-title color="light"> Nova Meta</ion-card-title>
+              </ion-card-header>
+
+              <!-- <ion-item color = "secondary" lines = "inset" style="--highlight-height: 0;"> -->
+                <ion-label position="stacked" style="padding: 15px;" >Tipo de meta</ion-label>
+                    <ion-select placeholder="Categoria" okText="Continuar" cancelText="Voltar">
+                        <ion-select-option value="Economia">Economia</ion-select-option>
+                        <ion-select-option value="casa">Casa</ion-select-option>
+                        <ion-select-option value="educação">Educação</ion-select-option>
+                        <ion-select-option value="eletrônicos">Eletrônicos</ion-select-option>
+                        <ion-select-option value="lazer">Lazer</ion-select-option>
+                        <ion-select-option value="outros">Outros</ion-select-option>
+                        <ion-select-option value="restaurante">Restaurante</ion-select-option>
+                        <ion-select-option value="saúde">Saúde</ion-select-option>
+                        <ion-select-option value="serviços">Serviços</ion-select-option>
+                        <ion-select-option value="supermercado">Supermercado</ion-select-option>
+                        <ion-select-option value="transporte">Transporte</ion-select-option>
+                        <ion-select-option value="vestuário">Vestuário</ion-select-option>
+                        <ion-select-option value="viagem">Viagem</ion-select-option>
+                  </ion-select>
+              <!-- </ion-item> -->
+
+              <!-- <ion-item color = "secondary" lines = "none" style="--highlight-height: 0;">
+                <ion-label position="stacked">Data</ion-label>
+                <ion-input type="date" id="input-date" type="date"></ion-input>
+              </ion-item> -->
+
+              <ion-item color = "secondary" lines = "none" style="--highlight-height: 0;">
+                <ion-label position="stacked">Valor</ion-label>
+                <ion-input type="text" id="input-value"></ion-input>
+              </ion-item>
+
+              <ion-item color = "secondary" lines = "none" style="--highlight-height: 0;">
+                <ion-label position="stacked">Tempo para cumprir meta</ion-label>
+                <ion-input type="text" id="input-frequency"></ion-input>
+              </ion-item>
+
+
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <div class="ion-text-center">
+      <ion-row style="height: 20px"></ion-row>
+      <ion-button class="ion-button" color="secondary" shape="round" (click)="stdbutton()">
+      <ion-icon slot="start" name="add-outline"></ion-icon>Adicionar Meta</ion-button>
+    </div>
+  </ion-toolbar>
+
+</ion-content>

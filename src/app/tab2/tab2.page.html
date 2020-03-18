@@ -1,17 +1,129 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 2
+<ion-content [fullscreen]="True">
+  <ion-toolbar class="NUcolor">
+
+    <ion-grid>
+      <ion-row style="padding:20px; height:0px">
+         <ion-col size="2" offset="0">
+           <div style="color: #ffb947">
+           <ion-icon  name="star-half-outline" slot="star-half-outline" style="color:#ffb947;font-size:22px"></ion-icon>
+           </div>
+         </ion-col>
+         <ion-col size="8">
+           <ion-title size="large" color="light" class="ion-text-center">
+             <img src="assets\nubank-logo.jpg" style="height: 20px; width: 20px;"/>
+               Lola
+           </ion-title>
+         </ion-col>
+     </ion-row>
+     <ion-row style="padding:8px; color: #ffb947; padding-left: 22px;">
+       572
+     </ion-row>
+   </ion-grid>
+    
+    <ion-row style="height: 20px"></ion-row>
+
+
+    <ion-title size="medium" color="light" class="ion-text-center">  
+      Últimos artigos Fala NuBank
     </ion-title>
+
+
+    <ion-row style="height: 5px"></ion-row>
+
+    <div>
+      <ion-slides pager class="ion-slides">
+        
+        <ion-slide>
+          <ion-card class="Dica" style="height: 460px; width: 300px;">
+
+            <ion-card-content class="ion-text-center">
+              <div class="text-nowrap"	style="font-size: large; color: black; margin: 8px; font-weight: bold;">
+                <ion-text>
+                  “É essencial mostrar a participação das mulheres nas empresas”
+                </ion-text>
+              </div>
+
+              <div class="ion-text-justify text-nowrap"	style="font-size: small; color: black; margin: 8px;">
+                <ion-text>
+                  Dessa vez você saberá sobre a histório de Priscila Souza, recrutadora de tecnologia do Nubank.
+                  Psicóloga, poliglota e mestre em Negociação Internacional já precisou reafirmar seu potencial em lugares que trabalhou.
+                </ion-text>
+              </div>
+              
+              <div class="spacer" style="width: 300px; height: 11px;"></div>
+              <img src="assets\imagemmulheres.jpeg" style="height: 148,8px; width: 256px;" />
+              <ion-row style="height: 10px"></ion-row>
+              <a href="https://blog.nubank.com.br/priscila-souza-reinventa-o-possivel/" style="color:#6D1C78;">Leia e ganhe pontos :)</a>
+            </ion-card-content>
+          </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-card class="Dica" style="height: 460px; width: 300px;">
+
+            <ion-card-content class="ion-text-center">
+              <div class="text-nowrap"	style="font-size: large; color: black; margin: 8px; font-weight: bold;">
+                <ion-text>
+                  Circuit breaker: o que é, como funciona e quando acontece?
+                </ion-text>
+              </div>
+
+              <div class="ion-text-justify text-nowrap"	style="font-size: small; color: black; margin: 8px;">
+                <ion-text>
+                  De tempos em tempos, pode acontecer de o termo circuit breaker bombardear o noticiário e surpreender muitas pessoas 
+                  – e não à toa: normalmente, ele só entra em cena quando o mercado financeiro passa por momentos de muita incerteza e 
+                  bruscas variações.
+                  
+                </ion-text>
+              </div>
+              
+              <div class="spacer" style="width: 300px; height: 11px;"></div>
+              <img src="assets\circuit-header.jpg" style="height: 148,8px; width: 256px;" />
+
+              <div class="ion-text-justify text-nowrap"	style="font-size: small; color: black; margin: 8px;">
+                <ion-text>
+                  Mas o que é o circuit breaker, afinal? Como funciona? Quando ele é usado?
+                </ion-text>
+              </div>
+
+              <ion-row style="height: 10px"></ion-row>
+              <a href="https://blog.nubank.com.br/circuit-breaker-o-que-e/" style="color:#6D1C78;">Leia e ganhe pontos :)</a>
+            </ion-card-content>
+          </ion-card>
+        </ion-slide>
+
+        <ion-slide>
+          <ion-card class="Dica" style="height: 460px; width: 300px;">
+
+            <ion-card-content class="ion-text-center">
+              <div class="text-nowrap"	style="font-size: large; color: black; margin: 8px; font-weight: bold;">
+                <ion-text>
+                  “Meus colegas me acham forte – e tenho orgulho disso”
+                </ion-text>
+              </div>
+
+              <div class="ion-text-justify text-nowrap"	style="font-size: small; color: black; margin: 8px;">
+                <ion-text>
+                  Michelle Onuki, líder de mobilidade global do Nubank, fala sobre os estereótipos da área de Recursos 
+                  Humanos e conta como ser mãe a tornou uma profissional ainda mais preparada para o mercado.
+                </ion-text>
+              </div>
+              
+              <div class="spacer" style="width: 300px; height: 11px;"></div>
+              <img src="assets\imagemmulherforte.jpg" style="height: 148,8px; width: 256px;" />
+              <ion-row style="height: 10px"></ion-row>
+              <a href="https://blog.nubank.com.br/michelle-onuki-reiventa-o-possivel/" style="color:#6D1C78;">Leia e ganhe pontos :)</a>
+            </ion-card-content>
+          </ion-card>
+        </ion-slide>
+
+        
+
+      </ion-slides>
+
+    </div>
+
+    <ion-row style="height: 0px"></ion-row>
+    
   </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 2 page"></app-explore-container>
 </ion-content>

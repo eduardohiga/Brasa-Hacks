@@ -24,24 +24,25 @@ export class Tab1Page  implements OnInit {
     this.doughnutChart = new Chart(this.doughnutCanvas.nativeElement, {
       type: "doughnut",
       data: {
-        labels: ["Casa", "Restaurante", "Educação", "Eletrônicos", "Transporte", "Lazer", "Outros", "Saúde", "Serviços", "Supermercado", "Vestuário", "Viagem"],
+        labels: ["Restaurante", "Eletrônicos", "Lazer", "Outros", "Supermercado", "Educação", "Transporte", "Casa", "Saúde", "Serviços", "Vestuário", "Viagem"],
         datasets: [
           {
             label: "# of Votes",
-            data: [12, 19, 3, 5, 2, 3, 12, 19, 3, 5, 2, 3],
+            data: [250, 190, 170, 150, 120, 110, 110, 60, 60, 40, 30, 30],
             backgroundColor: [
-              "rgba(255, 99, 132, 0.2)",
-              "rgba(54, 162, 235, 0.2)",
-              "rgba(255, 206, 86, 0.2)",
-              "rgba(75, 192, 192, 0.2)",
-              "rgba(153, 102, 255, 0.2)",
-              "rgba(255, 159, 64, 0.2)",
-              "rgba(255, 99, 132, 0.2)",
-              "rgba(54, 162, 235, 0.2)",
-              "rgba(255, 206, 86, 0.2)",
-              "rgba(75, 192, 192, 0.2)",
-              "rgba(153, 102, 255, 0.2)",
-              "rgba(255, 159, 64, 0.2)"
+              "green",
+              "yellow",
+              "red",
+              "blue",
+              "pink",
+              "brown",
+              "orange",
+              "lime",
+              "silver",
+              "turquoise",
+              "tan",
+              "indigo"
+
             ],
             //borderColor: ["#FF6384", "#36A2EB", "#FFCE56", "#FF6384", "#36A2EB", "#FFCE56", "#FF6384", "#36A2EB", "#FFCE56", "#FF6384", "#36A2EB", "#FFCE56"],
             //borderWidth: 0
@@ -66,7 +67,7 @@ export class Tab1Page  implements OnInit {
         labels: ["Outubro","Novembro","Dezembro","Janeiro", "Fevereiro", "Março"],
         datasets: [
           {
-            label: "Gastos ao longo dos últimos meses",
+            label: "R$",
             fill: false,
             lineTension: 0.1,
             backgroundColor: "rgba(75,192,192,0.4)",
@@ -92,7 +93,7 @@ export class Tab1Page  implements OnInit {
       options: {
         responsive: false,
         legend: {
-          display: true,
+          display: false,
         },
         scales: {
         }
@@ -105,7 +106,7 @@ export class Tab1Page  implements OnInit {
         labels: ["Outubro","Novembro","Dezembro","Janeiro", "Fevereiro", "Março"],
         datasets: [
           {
-            label: "Economia ao longo dos últimos meses",
+            label: "R$",
             fill: false,
             lineTension: 0.1,
             backgroundColor: "rgba(75,192,192,0.4)",
@@ -131,7 +132,7 @@ export class Tab1Page  implements OnInit {
       options: {
         responsive: false,
         legend: {
-          display: true,
+          display: false,
         },
         scales: {
         }

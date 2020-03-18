@@ -6,6 +6,8 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 import { Chart } from 'chart.js';
+import {ProgressBarModule} from "angular-progress-bar"
+
 
 @NgModule({
   imports: [
@@ -13,7 +15,8 @@ import { Chart } from 'chart.js';
     CommonModule,
     FormsModule,
     ExploreContainerComponentModule,
-    RouterModule.forChild([{ path: '', component: HomePage }])
+    RouterModule.forChild([{ path: '', component: HomePage }]),
+    ProgressBarModule
   ],
   declarations: [HomePage]
 })
