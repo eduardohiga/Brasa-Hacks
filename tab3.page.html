@@ -1,0 +1,119 @@
+<ion-content [fullscreen]="True" class="NUcolor">
+  <ion-toolbar class="NUcolor">
+
+    <ion-grid>
+      <ion-row style="padding:20px; height:0px">
+         <ion-col size="2" offset="0">
+           <div style="color: #ffb947">
+           <ion-icon  name="star-half-outline" slot="star-half-outline" style="color:#ffb947;font-size:22px"></ion-icon>
+           </div>
+         </ion-col>
+         <ion-col size="8">
+           <ion-title size="large" color="light" class="ion-text-center">
+             <img src="assets\nubank-logo.jpg" style="height: 20px; width: 20px;"/>
+               Lola
+           </ion-title>
+         </ion-col>
+     </ion-row>
+     <ion-row style="padding:8px; color: #ffb947; padding-left: 22px;">
+       572
+     </ion-row>
+   </ion-grid>
+
+    <ion-row style="height: 20px;"></ion-row>
+
+    <ion-title size="small" color="light" class="ion-text-center">  
+      Confira suas recompensas!
+    </ion-title>  
+
+    <ion-card  style="background-color:white; color: black;">
+      <ion-card-content class="ion-text-center"> 
+        <!-- <ion-icon  name="star-half-outline" slot="start" style="color:#ffb947;font-size:22px"></ion-icon> -->
+       Você possui: 572 NuPontos!
+      </ion-card-content>
+    </ion-card>
+
+    <ion-slides pager class="ion-slides">
+      <ion-slide>
+        <ion-card  style="height: 290px; width: 300px;">  
+          <ion-card-content class="ion-text-center">
+            <img src="assets\ifood.png" style="height: 200px; width: 200px;"/>
+            <ion-title style="padding-top: 10px; color:black">
+              <p>R$10,00 a cada <b> 200</b> pontos</p>
+            </ion-title> 
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card  style="height: 290px; width: 300px;">  
+          <ion-card-content class="ion-text-center">
+            <img src="assets\uber.png" style="height: 200px; width: 200px;"/>
+            <ion-title style="padding-top: 10px; color:black">
+              <p>R$5,00 a cada <b> 150</b> pontos</p>
+            </ion-title> 
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card  style="height: 290px; width: 300px;">  
+          <ion-card-content class="ion-text-center">
+            <img src="assets\amazon2.jpg" style="height: 200px; width: 200px;"/>
+            <ion-title style="padding-top: 10px; color:black">
+              <p>R$20,00 a cada <b> 500</b> pontos</p>
+            </ion-title> 
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card  style="height: 290px; width: 300px;">  
+          <ion-card-content class="ion-text-center">
+            <img src="assets\microsoft.png" style="height: 180px; width: 180px;"/>
+            <!-- <ion-title style="padding-top: 30px; color:black"> -->
+            <div style="padding-top: 30px; color:black">
+              <p>5% de desconto a cada <b> 2500</b> pontos</p>
+            </div>
+            <!-- </ion-title>  -->
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card  style="height: 290px; width: 300px;">  
+          <ion-card-content class="ion-text-center">
+            <img src="assets\nike.png" style="height: 200px; width: 200px;"/>
+            <ion-title style="padding-top: 10px; color:black">
+              <p>R$50,00 a cada <b> 1000</b> pontos</p>
+            </ion-title> 
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+
+      <ion-slide>
+        <ion-card  style="height: 290px; width: 300px;">  
+          <ion-card-content class="ion-text-center">
+            <img src="assets\rappi.jpg" style="height: 200px; width: 200px;"/>
+            <ion-title style="padding-top: 10px; color:black">
+              <p>R$10,00 a cada <b> 250 </b> pontos</p>
+            </ion-title> 
+          </ion-card-content>
+        </ion-card>
+      </ion-slide>
+  </ion-slides>
+
+  <div class="ion-text-center">
+    <ion-button href="https://nubank.com.br/rewards/" class="ion-button" shape="round">
+      Mais produtos
+    </ion-button>
+  </div>
+  
+  <div class="ion-text-center">
+    <ion-button class="ion-button" shape="round" (click)="go_to('./tabs/metas')">
+      Minhas metas
+    </ion-button>
+  </div>
+  
+  </ion-toolbar>
+</ion-content>
