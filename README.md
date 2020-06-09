@@ -9,5 +9,5 @@ The project was developed in ionic, feel free to send any questions!
 
 Project developed with: 
 - Yuri Borrmann (https://linkedin.com/in/yuriborrmann, https://github.com/YuriBorrmann)
-- Kevin Khul 
+- Kevin Kuhl 
 - Bruno Silva
